@@ -1,0 +1,46 @@
+{
+    "BuildID": "5637bb42-f28f-45fe-9a37-a727efd711d8",
+    "Command": "project:build",
+    "ProjectID": "a40884648ce77fc41b79c55701237d74",
+    "ProjectStateHash": "aecb5464a0f253513d52973223881437155259e2aae89a3a48da7bb4ffed0569",
+    "StageCompletedAt": 2,
+    "EarliestFatalError": 0,
+    "StartTime": 1758861511112,
+    "EndTime": 1758861516314,
+    "PlaygroundUserID": 11122,
+    "OperatingSystem": "win32",
+    "TargetPlatform": "develop",
+    "UnityVersion": "6000.2.5f1",
+    "LunaVersion": "6.4.0",
+    "LogCount": 1,
+    "Logs": [
+        {
+            "LogID": "92b06538-ead7-4a42-8135-65b20b4dba2d",
+            "Timestamp": 1758861516064,
+            "Stage": 1,
+            "Severity": 1,
+            "ErrorType": 0,
+            "ErrorCode": "LP1025",
+            "Description": "Unhandled Exception: Attempted to access an element as a type incompatible with the array.",
+            "Details": [
+                "Exception: System.ArrayTypeMismatchException : Attempted to access an element as a type incompatible with the array.",
+                ""
+            ],
+            "DescriptionValues": [
+                "Attempted to access an element as a type incompatible with the array."
+            ],
+            "DetailsValues": [
+                "System.ArrayTypeMismatchException",
+                "Attempted to access an element as a type incompatible with the array.",
+                "  at (wrapper stelemref) System.Object.virt_stelemref_interface(intptr,object)\r\n  at System.Collections.Generic.List`1[T].AddWithResize (T item) [0x00019] in <59bd7c40c082431db25e1e728ab62789>:0 \r\n  at System.Collections.Generic.List`1[T].Add (T item) [0x00034] in <59bd7c40c082431db25e1e728ab62789>:0 \r\n  at  . ․. [ ] ( .  `1[ ] ) [0x00043] in <2d8a837ebcb945f7bbe4eb31a4bb178b>:0 \r\n  at  . ⁤. [ ] ( .  `1[ ] ) [0x00000] in <2d8a837ebcb945f7bbe4eb31a4bb178b>:0 \r\n  at  . ‭..ctor ( . ⁤ ) [0x00012] in <2d8a837ebcb945f7bbe4eb31a4bb178b>:0 \r\n  at  . ⁤..ctor ( . ‒ , System.Boolean ) [0x0014a] in <2d8a837ebcb945f7bbe4eb31a4bb178b>:0 \r\n  at  . –.  () [0x00038] in <2d8a837ebcb945f7bbe4eb31a4bb178b>:0 ",
+                ""
+            ],
+            "LogCount": 1,
+            "FilePath": "",
+            "LinePosition": 0,
+            "ClassName": "",
+            "MemberName": "",
+            "Order": 0
+        }
+    ]
+}
