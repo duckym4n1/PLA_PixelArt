@@ -1,0 +1,127 @@
+{
+  "ignores": [],
+  "groups": [
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/AutoCanvasScaler.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/Board.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ZoomManager.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/Cell.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ConvertImage.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ChooseBtn.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/SO/Data.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ColorBtn.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/Palette.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/BoardManager.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ResponsiveGrid.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark01_UGUI.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark01.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark02.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TextMeshProFloatingText.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TextMeshSpawner.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark03.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark04.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/CameraController.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/ChatController.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/DropdownSample.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/EnvMapAnimator.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/ObjectSpin.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/ShaderPropAnimator.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/SimpleScript.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/SkewTextExample.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TeleType.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TextConsoleSimulator.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_DigitValidator.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_ExampleScript_01.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_FrameRateCounter.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_PhoneNumberValidator.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextEventCheck.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextEventHandler.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextInfoDebugTool.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextSelector_A.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_TextSelector_B.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMP_UiFrameRateCounter.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/TMPro_InstructionOverlay.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexColorCycler.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexJitter.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexShakeA.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexShakeB.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/VertexZoom.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/WarpTextExample.cs"
+    ],
+    [
+      "C:/Users/admin/Desktop/Package/Luna/pipeline/templates/LunaCompiler/Scripts/Properties/AssemblyInfo.cs"
+    ],
+    [
+      "C:/Users/admin/Desktop/Package/Luna/pipeline/templates/LunaCompiler/Scripts/Sources/OtherDummyScript.cs"
+    ],
+    [
+      "C:/Users/admin/Desktop/Package/Luna/pipeline/templates/LunaCompiler/Scripts/obj/Debug/.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+    ]
+  ]
+}
