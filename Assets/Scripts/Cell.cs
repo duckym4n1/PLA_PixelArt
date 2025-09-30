@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 public class Cell : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerUpHandler
 {
-    public TextMeshProUGUI text;
+    public SpriteMask mask;
     public Text txt;
     private Image sprite;
     public int row;
@@ -61,11 +61,13 @@ public class Cell : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IP
             return;
         if (!ConvertImage.Instance.CountUnColor(value)) 
             return;
-        sparkles.SetActive(true);
+        //sparkles.SetActive(true);
         sprite.color = cellColor;
         txt.text = "";
         isColored = true;
         sprite.sprite = afterPaint;
+        if (mask != null)
+            mask.enabled = true;
         ConvertImage.Instance.SyncProcesses?.Invoke(row, col, this.gameObject);
     }
 
