@@ -1,14 +1,48 @@
 {
-  "ignores": [],
+  "ignores": [
+    "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleAudio.cs",
+    "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModulePhysics.cs",
+    "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModulePhysics2D.cs",
+    "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleSprite.cs",
+    "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleUI.cs",
+    "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+  ],
   "groups": [
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleAudio.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleEPOOutline.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModulePhysics.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModulePhysics2D.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleSprite.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleUI.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleUnityVersion.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Plugin/DOTween/Modules/DOTweenModuleUtils.cs"
+    ],
     [
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/AutoCanvasScaler.cs"
     ],
     [
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/Board.cs",
-      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ZoomManager.cs",
-      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/Cell.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/SparkleMaskController.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/LogicBoardnCellMoi/CellData.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/LogicBoardnCellMoi/BoardTileMap.cs",
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ConvertImage.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/Cell.cs",
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/CellBorderDrawer.cs",
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ChooseBtn.cs",
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/SO/Data.cs",
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ColorBtn.cs",
@@ -16,7 +50,37 @@
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/BoardManager.cs"
     ],
     [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ColorReducer.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/FadeInStart.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/FingerAnimation.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/GridDrawer.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ParticlesMaskManager.cs"
+    ],
+    [
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ResponsiveGrid.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/SimpleTutorial.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/SmartCellOutline.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/TextWaveTMP.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/TutorialStep.cs"
+    ],
+    [
+      "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/Scripts/ZoomManager.cs"
     ],
     [
       "C:/Users/admin/SourceCode/Unity/PLAPixelArt/LunaTemp/stage3/processed-scripts/Assets/TextMesh Pro/Examples \u0026 Extras/Scripts/Benchmark01_UGUI.cs"

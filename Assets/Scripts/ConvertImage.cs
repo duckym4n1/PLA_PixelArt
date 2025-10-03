@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Windows;
 
 public class ConvertImage : MonoBehaviour
 {
@@ -71,12 +73,41 @@ public class ConvertImage : MonoBehaviour
                 //completeMatrix[i, j] = 1;
             }
         }
-        Debug.Log($"Matrix complete. Total unique colors = {colorDict.Count}");
+        //Debug.Log($"Matrix complete. Total unique colors = {colorDict.Count}");
         RenderPixelMatrix?.Invoke();
-        currentUnColor = 1;
         SetUpCountColor();
+        //ColorSorter();
+        currentUnColor = mostColorIndex();
         ActivateCell?.Invoke();
     }
+
+    private int mostColorIndex()
+    {
+        int result = 0;
+        int max = -1;
+        for (int i = 0; i < colorAmount.Count; i++)
+        {
+            if(colorAmount[i] > max)
+            {
+                max = colorAmount[i];
+                result = i + 1;
+            }
+        }
+        return result;
+    }
+/*    public Texture2D ReduceSprite(Sprite sprite)
+    {
+        Rect rect = sprite.textureRect;
+        Texture2D tex = new Texture2D((int)rect.width, (int)rect.height, TextureFormat.RGBA32, false);
+        tex.SetPixels(sprite.texture.GetPixels(
+            (int)rect.x, (int)rect.y,
+            (int)rect.width, (int)rect.height
+        ));
+        tex.Apply();
+
+        // Giảm màu
+        return ColorReducerFast.ReduceColorsFast(tex);
+    }*/
     public int FindClosestColorValue(Dictionary<Color32, int> dict, Color32 target)
     {
         int closestValue = -1;
@@ -113,6 +144,28 @@ public class ConvertImage : MonoBehaviour
         Color32[] pixels = tex.GetPixels32();
         int[,] result = new int[h, w];
 
+        for(int y = 0; y < h; y++)
+        {
+            for(int x = 0; x < w; x++)
+            {
+                int realY = (h - 1 - y) + (int)rect.y;
+                int realX = x + (int)rect.x;
+
+                int idx = realY * tex.width + realX;
+                Color32 p = pixels[idx];
+                if (p.a <= alphaThreshold)
+                    continue;
+                Color32 key = new Color32(p.r, p.g, p.b, 255);
+
+                if (!colorDict.TryGetValue(key, out int val))
+                {
+                    val = nextIndex++;
+                    colorDict[key] = val;
+                }
+            }
+        }
+        colorDict = ReducePalette(colorDict, 0.1f);
+
         for (int y = 0; y < h; y++)
         {
             for (int x = 0; x < w; x++) 
@@ -130,26 +183,63 @@ public class ConvertImage : MonoBehaviour
                 }
 
                 Color32 key = new Color32(p.r, p.g, p.b, 255);
-
-                if (!colorDict.TryGetValue(key, out int val))
-                {
-                    val = nextIndex++;
-                    colorDict[key] = val;
-                }
-
-                result[y, x] = val;
+                result[y, x] = FindClosestColorValue(colorDict, key);
+                //Debug.Log($"Mapping pixel at ({x}, {y}) with color {key} to value {result[y, x]}");
+                /*                if (colorDict.TryGetValue(key, out int val))
+                                {
+                                    result[y, x] = val;
+                                }*/
             }
         }
 
         return result;
     }  
-   private void SetUpCountColor()
+
+   public Dictionary<Color32, int> ReducePalette(Dictionary<Color32, int> originalDict, float tolerance = 0.1f)
+    {
+        Dictionary<Color32, int> result = new Dictionary<Color32, int>();
+        foreach (var kvp in originalDict)
+        {
+            Color32 c = kvp.Key;
+            int index = kvp.Value;
+
+            bool merged = false;
+
+            foreach (var r in result.Keys)
+            {
+                float d = (c.r - r.r) * (c.r - r.r) +
+                          (c.g - r.g) * (c.g - r.g) +
+                          (c.b - r.b) * (c.b - r.b);
+
+                if (d < tolerance * 255f * tolerance * 255f)
+                {
+                    merged = true;
+                    break;
+                }
+            }
+
+            if (!merged)
+            {
+                result[c] = index;
+            }
+        }
+        int val = 1;
+        var keys = result.Keys.ToList();
+        foreach(var key in keys)
+        {
+            result[key] = val;
+            val++;
+        }
+        return result;
+    }    
+    private void SetUpCountColor()
    {
         for(int i = 0; i < colorDict.Count; i++)
         {
             colorAmount.Add(0);
             colorTotal.Add(0);
         }
+        //Debug.Log($"Color amount list initialized with {colorAmount.Count} colors.");
         for (int y = 0; y < pixelMatrix.GetLength(0); y++)
         {
             for (int x = 0; x < pixelMatrix.GetLength(1); x++)
@@ -157,11 +247,25 @@ public class ConvertImage : MonoBehaviour
                 int val = pixelMatrix[y, x];
                 if (val == 0)
                     continue;
+                //Debug.Log($"Incrementing count for color value {val}");
                 colorAmount[val - 1]++;
                 colorTotal[val - 1]++;
             }
         }
+        //ColorSorter();
     }
+
+    void ColorSorter()
+    {
+        var sorted = colorDict
+            .OrderByDescending(kv => colorAmount[kv.Value]);
+
+        foreach (var kv in sorted)
+        {
+            int count = colorAmount[kv.Value];
+            Debug.Log($"Color {kv.Key} xuất hiện {count} lần (index {kv.Value})");
+        }
+    }    
     public bool CountUnColor(int value)
     {
         if (value != currentUnColor)
@@ -180,7 +284,6 @@ public class ConvertImage : MonoBehaviour
                 }
             }
             CheckFullComplete();
-            Debug.Log($"Current uncolored: {currentUnColor}");
             ActivateCell?.Invoke();
             HideShowProgressBar?.Invoke();
         }

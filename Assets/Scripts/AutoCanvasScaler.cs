@@ -16,12 +16,10 @@ public class AutoCanvasScaler : MonoBehaviour
         if (isLandscape)
         {
             scaler.matchWidthOrHeight = 1; // Match height
-            Debug.Log("Landscape");
         }
         else
         {
             scaler.matchWidthOrHeight = 0; // Match width
-            Debug.Log("Portrait");
         }
     }
 }

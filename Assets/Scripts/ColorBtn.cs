@@ -20,6 +20,7 @@ public class ColorBtn : MonoBehaviour
     void Start()
     {
         ConvertImage.Instance.CheckingDoneColor += CheckDone;
+        
     }
 
     public void Setup(int index, Color32 col)

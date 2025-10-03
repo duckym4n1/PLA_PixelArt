@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f403acb42c481764ebb66e7b327351db, type: 3}
   m_Name: Tralalelo
   m_EditorClassIdentifier: Assembly-CSharp::Data
-  img: {fileID: -1633339894804796741, guid: 5f124cca1a97e6944a0d157473f4f8b1, type: 3}
+  img: {fileID: 21300000, guid: faf0e18c8295abd41ba96fad127a925a, type: 3}
   colorList:
   - key: 1
     r: 239

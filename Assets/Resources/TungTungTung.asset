@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f403acb42c481764ebb66e7b327351db, type: 3}
   m_Name: TungTungTung
   m_EditorClassIdentifier: Assembly-CSharp::Data
-  img: {fileID: -5777348859663651890, guid: de372709ec6ded54ab3d290f701d8219, type: 3}
+  img: {fileID: 21300000, guid: 0e548a723bde9c143b638a45d73b2a83, type: 3}
   colorList:
   - key: 1
     r: 247

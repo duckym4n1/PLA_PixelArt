@@ -1,4 +1,4 @@
-using TMPro;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,8 +7,6 @@ public class ColorBtn : MonoBehaviour
     private int colorIndex;
     [SerializeField] 
     private Color32 color;
-    [SerializeField]
-    private TextMeshProUGUI text;
     [SerializeField]
     private Text txt;
     [SerializeField]
@@ -22,6 +20,7 @@ public class ColorBtn : MonoBehaviour
     void Start()
     {
         ConvertImage.Instance.CheckingDoneColor += CheckDone;
+        
     }
 
     public void Setup(int index, [Bridge.Ref] Color32 col)
@@ -30,6 +29,7 @@ public class ColorBtn : MonoBehaviour
         color = col;
         GetComponent<Image>().color = color;
         txt.text = colorIndex.ToString();
+        txt.color = GetReadableTextColor(color);
     }
 
     public void ClickChangeColor()
@@ -46,6 +46,20 @@ public class ColorBtn : MonoBehaviour
         if (colorIndex != ConvertImage.Instance.GetCurrentUnColor())
             return;
         txt.text = "V";
+        Sequence seq = DOTween.Sequence();
+
+        seq.Append(transform.DOScale(2f, 0.15f).SetEase(Ease.OutBack));
+
+        seq.Join(transform.DOShakeScale(
+            duration: 0.4f,   
+            strength: 0.25f, 
+            vibrato: 20,      
+            randomness: 90,
+            fadeOut: true
+        ));
+
+
+        seq.Append(transform.DOScale(1f, 0.15f).SetEase(Ease.InBack));
     }
 
     private void OnDestroy()
@@ -71,5 +85,14 @@ public class ColorBtn : MonoBehaviour
             return;
         }    
         img.gameObject.SetActive(false);
+    }
+
+    private Color GetReadableTextColor([Bridge.Ref] Color32 backgroundColor)
+    {
+        float brightness = (0.299f * backgroundColor.r +
+                            0.587f * backgroundColor.g +
+                            0.114f * backgroundColor.b) / 255f;
+
+        return brightness > 0.5f ? Color.black : Color.white;
     }
 }
